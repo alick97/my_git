@@ -1,0 +1,9 @@
+# windows
+*.sdf
+**.sln
+*.suo
+*.vcxproj
+*.filters
+*.bak
+*.user
+Debug
