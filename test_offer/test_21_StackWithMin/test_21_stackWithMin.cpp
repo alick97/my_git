@@ -8,7 +8,6 @@ using namespace std;
  *  题目： 定义栈的数据结构，请在该类型中实现一个等够得到栈的最小值的
  *  min函数。在该栈中，调用min、push以及pop的时间复杂度为O（1）。
  *
- *
  ***********/
 
 template<class T>
