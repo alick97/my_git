@@ -63,23 +63,31 @@ int Partition(int* numbers, int length, int start, int end)
         throw exception("Invalid Partition");
     }
 
-    int key = numbers[length - 1];
+    int key = end;
 
     while (start < end)
     {
-        while (start < end && numbers[start] <= key)
+        while (start < end && numbers[start] <= numbers[key])
         {
             start++;
         }
 
-        while (start < end && numbers[end] >= key)
+        while (start < end && numbers[end] >= numbers[key])
         {
             end--;
         }
         swap(numbers[start], numbers[end]);
     }
 
-    return start;
+    if (numbers[start] > numbers[key])
+    {
+        swap(numbers[start], numbers[key]);
+         return start;
+    }
+    else // 1 2 3 4 99
+    {
+        return key;
+    }
 }
 
 
