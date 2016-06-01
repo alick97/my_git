@@ -94,8 +94,8 @@ void test()
 }
 
 
-// method 2
-// 利用大堆
+// method 2 O(Nlog(N))
+// 利用大堆 
 
 void _AJustDown(int* output,int size, int parent);
 
