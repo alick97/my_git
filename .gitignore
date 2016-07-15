@@ -6,4 +6,5 @@
 *.filters
 *.bak
 *.user
+*.opensdf
 Debug
